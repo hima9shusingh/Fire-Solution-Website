@@ -1,0 +1,142 @@
+﻿
+> niranjali-firesolutions@0.0.0 build
+> vite build
+
+[36mvite v7.3.1 [32mbuilding client environment for production...[36m[39m
+transforming...
+[32mΓ£ô[39m 1800 modules transformed.
+node.exe : 
+[31mΓ£ù[39m Build 
+failed in 2.20s
+At C:\nvm4w\nodejs\np
+m.ps1:29 char:3
++   & $NODE_EXE 
+$NPM_CLI_JS $args
++   ~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~
+    + CategoryInfo   
+           : NotSpe  
+  cified: ([31mΓ£   
+ ù[39m Build fai    
+led in 2.20s:Str    
+ing) [], RemoteE    
+xception
+    + FullyQualified 
+   ErrorId : Native  
+  CommandError
+ 
+[31merror during 
+build:
+[31msrc/pages/Home.j
+sx (7:9): "WhyUs" is 
+not exported by "src/
+components/sections/H
+ome/WhyUs.jsx", 
+imported by "src/page
+s/Home.jsx".[31m
+file: [36mC:/Users/g
+opik/OneDrive/Desktop
+/niranjali/frontend/s
+rc/pages/Home.jsx:7:9
+[31m
+[33m
+5: import { Services 
+} from '../components
+/sections/Home/Servic
+es';
+6: import { 
+Industries } from '..
+/components/sections/
+Home/Industries';
+7: import { WhyUs } 
+from '../components/s
+ections/Home/WhyUs';
+            ^
+8: import { FinalCTA 
+} from '../components
+/sections/Home/FinalC
+TA';
+9: import { 
+EmergencyBanner } 
+from '../components/s
+ections/Home/Emergenc
+yBanner';
+[31m
+    at 
+getRollupError (file:
+///C:/Users/gopik/One
+Drive/Desktop/niranja
+li/frontend/node_modu
+les/rollup/dist/es/sh
+ared/parseAst.js:402:
+41)
+    at error (file://
+/C:/Users/gopik/OneDr
+ive/Desktop/niranjali
+/frontend/node_module
+s/rollup/dist/es/shar
+ed/parseAst.js:398:42
+)
+    at Module.error (
+file:///C:/Users/gopi
+k/OneDrive/Desktop/ni
+ranjali/frontend/node
+_modules/rollup/dist/
+es/shared/node-entry.
+js:17040:16)
+    at 
+Module.traceVariable 
+(file:///C:/Users/gop
+ik/OneDrive/Desktop/n
+iranjali/frontend/nod
+e_modules/rollup/dist
+/es/shared/node-entry
+.js:17452:29)
+    at ModuleScope.fi
+ndVariable (file:///C
+:/Users/gopik/OneDriv
+e/Desktop/niranjali/f
+rontend/node_modules/
+rollup/dist/es/shared
+/node-entry.js:15070:
+39)
+    at ReturnValueSco
+pe.findVariable (file
+:///C:/Users/gopik/On
+eDrive/Desktop/niranj
+ali/frontend/node_mod
+ules/rollup/dist/es/s
+hared/node-entry.js:5
+673:38)
+    at FunctionBodySc
+ope.findVariable (fil
+e:///C:/Users/gopik/O
+neDrive/Desktop/niran
+jali/frontend/node_mo
+dules/rollup/dist/es/
+shared/node-entry.js:
+5673:38)
+    at 
+Identifier.bind (file
+:///C:/Users/gopik/On
+eDrive/Desktop/niranj
+ali/frontend/node_mod
+ules/rollup/dist/es/s
+hared/node-entry.js:5
+447:40)
+    at 
+CallExpression.bind (
+file:///C:/Users/gopi
+k/OneDrive/Desktop/ni
+ranjali/frontend/node
+_modules/rollup/dist/
+es/shared/node-entry.
+js:2825:28)
+    at 
+CallExpression.bind (
+file:///C:/Users/gopi
+k/OneDrive/Desktop/ni
+ranjali/frontend/node
+_modules/rollup/dist/
+es/shared/node-entry.
+js:12179:15)[39m
