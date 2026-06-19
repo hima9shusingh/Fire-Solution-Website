@@ -62,4 +62,5 @@ This project aims to spread awareness about fire safety and provide easy access 
 ## 👨‍💻 Author  
 Himanshu Singh  
 Gopi Kishan
+
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  
