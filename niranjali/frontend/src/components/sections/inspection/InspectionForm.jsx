@@ -45,7 +45,7 @@ export const InspectionForm = () => {
         if (data.area) data.area = Number(data.area);
 
         try {
-            const response = await fetch('http://localhost:5000/api/forms/inspection', {
+            const response = await fetch('https://fire-solution-website.onrender.com/api/forms/inspection', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
