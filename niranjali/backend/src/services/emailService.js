@@ -1,20 +1,33 @@
-const { transporter } = require('../config/emailConfig');
+const { resend } = require('../config/emailConfig');
 
 const sendEmail = async (to, subject, htmlContent) => {
     try {
-        const mailOptions = {
+        const { data, error } = await resend.emails.send({
             from: process.env.FROM_EMAIL,
-            to: to,
-            subject: subject,
+            to: [to],
+            subject,
             html: htmlContent
-        };
+        });
 
-        const info = await transporter.sendMail(mailOptions);
-        console.log('Email sent: ' + info.response);
-        return { success: true, message: 'Email sent successfully', info };
+        if (error) {
+            throw new Error(error.message);
+        }
+
+        console.log('Email sent through Resend:', data.id);
+
+        return {
+            success: true,
+            message: 'Email sent successfully',
+            data
+        };
     } catch (error) {
-        console.error('Error sending email:', error);
-        return { success: false, message: 'Failed to send email', error };
+        console.error('Resend error:', error.message);
+
+        return {
+            success: false,
+            message: 'Failed to send email',
+            error
+        };
     }
 };
 
