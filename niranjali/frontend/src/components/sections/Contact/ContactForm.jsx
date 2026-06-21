@@ -42,7 +42,7 @@ export const ContactForm = () => {
         const data = Object.fromEntries(formData.entries());
 
         try {
-            const response = await fetch('http://localhost:5000/api/forms/contact', {
+            const response = await fetch('https://fire-solution-website.onrender.com/api/forms/contact', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
